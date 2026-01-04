@@ -1,0 +1,65 @@
+{
+  "doctype": "DocType",
+  "name": "MIS Flag",
+  "module": "Neotec MIS",
+  "custom": 0,
+  "track_changes": 1,
+  "istable": 0,
+  "autoname": "field:flag_code",
+  "title_field": "flag_name",
+  "fields": [
+    {
+      "fieldname": "flag_code",
+      "label": "Flag Code",
+      "fieldtype": "Data",
+      "reqd": 1,
+      "unique": 1
+    },
+    {
+      "fieldname": "flag_name",
+      "label": "Flag Name",
+      "fieldtype": "Data",
+      "reqd": 1
+    },
+    {
+      "fieldname": "description",
+      "label": "Description",
+      "fieldtype": "Small Text"
+    },
+    {
+      "fieldname": "is_active",
+      "label": "Is Active",
+      "fieldtype": "Check",
+      "default": 1
+    },
+    {
+      "fieldname": "accounts",
+      "label": "Accounts",
+      "fieldtype": "Table",
+      "options": "MIS Flag Account"
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1,
+      "report": 1
+    },
+    {
+      "role": "Neotec MIS Admin",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1,
+      "report": 1
+    },
+    {
+      "role": "Neotec MIS User",
+      "read": 1,
+      "report": 1
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "doctype": "DocType",
+  "name": "MIS Report Format",
+  "module": "Neotec MIS",
+  "custom": 0,
+  "track_changes": 1,
+  "istable": 0,
+  "autoname": "field:format_code",
+  "title_field": "format_name",
+  "fields": [
+    {
+      "fieldname": "format_code",
+      "label": "Format Code",
+      "fieldtype": "Data",
+      "reqd": 1,
+      "unique": 1
+    },
+    {
+      "fieldname": "format_name",
+      "label": "Format Name",
+      "fieldtype": "Data",
+      "reqd": 1
+    },
+    {
+      "fieldname": "company",
+      "label": "Company",
+      "fieldtype": "Link",
+      "options": "Company"
+    },
+    {
+      "fieldname": "currency",
+      "label": "Currency",
+      "fieldtype": "Link",
+      "options": "Currency"
+    },
+    {
+      "fieldname": "version",
+      "label": "Version",
+      "fieldtype": "Data",
+      "default": "1.0"
+    },
+    {
+      "fieldname": "is_active",
+      "label": "Is Active",
+      "fieldtype": "Check",
+      "default": 1
+    },
+    {
+      "fieldname": "lines",
+      "label": "Lines",
+      "fieldtype": "Table",
+      "options": "MIS Report Line"
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1,
+      "report": 1
+    },
+    {
+      "role": "Neotec MIS Admin",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1,
+      "report": 1
+    },
+    {
+      "role": "Neotec MIS User",
+      "read": 1,
+      "report": 1
+    }
+  ]
+}

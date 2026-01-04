@@ -1,0 +1,18 @@
+{
+  "doctype": "DocType",
+  "name": "MIS Report Line Flag",
+  "module": "Neotec MIS",
+  "custom": 0,
+  "track_changes": 1,
+  "istable": 1,
+  "editable_grid": 1,
+  "fields": [
+    {
+      "fieldname": "flag",
+      "label": "Flag",
+      "fieldtype": "Link",
+      "options": "MIS Flag",
+      "reqd": 1
+    }
+  ]
+}

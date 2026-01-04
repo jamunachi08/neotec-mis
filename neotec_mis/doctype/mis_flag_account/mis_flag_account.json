@@ -1,0 +1,35 @@
+{
+  "doctype": "DocType",
+  "name": "MIS Flag Account",
+  "module": "Neotec MIS",
+  "custom": 0,
+  "track_changes": 1,
+  "istable": 1,
+  "editable_grid": 1,
+  "fields": [
+    {
+      "fieldname": "account",
+      "label": "Account",
+      "fieldtype": "Link",
+      "options": "Account",
+      "reqd": 1
+    },
+    {
+      "fieldname": "include",
+      "label": "Include",
+      "fieldtype": "Check",
+      "default": 1
+    },
+    {
+      "fieldname": "weight",
+      "label": "Weight",
+      "fieldtype": "Float",
+      "default": 1
+    },
+    {
+      "fieldname": "note",
+      "label": "Note",
+      "fieldtype": "Data"
+    }
+  ]
+}

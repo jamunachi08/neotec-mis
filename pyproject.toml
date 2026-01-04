@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "neotec_mis"
+version = "0.1.0"
+description = "Neotec MIS Builder - Advanced MIS and financial report format builder for ERPNext/Frappe v15+ and v16+."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Neotec / IRSAA"}]
+keywords = ["frappe", "erpnext", "mis", "financial-reporting"]
+dependencies = []
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["."]

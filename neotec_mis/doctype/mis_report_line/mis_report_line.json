@@ -1,0 +1,74 @@
+{
+  "doctype": "DocType",
+  "name": "MIS Report Line",
+  "module": "Neotec MIS",
+  "custom": 0,
+  "track_changes": 1,
+  "istable": 1,
+  "editable_grid": 1,
+  "fields": [
+    {
+      "fieldname": "line_code",
+      "label": "Line Code",
+      "fieldtype": "Data",
+      "reqd": 1
+    },
+    {
+      "fieldname": "line_title",
+      "label": "Line Title",
+      "fieldtype": "Data",
+      "reqd": 1
+    },
+    {
+      "fieldname": "line_type",
+      "label": "Line Type",
+      "fieldtype": "Select",
+      "reqd": 1,
+      "options": "Header\nDetail\nSubtotal\nTotal\nPercent\nText",
+      "default": "Detail"
+    },
+    {
+      "fieldname": "display_order",
+      "label": "Display Order",
+      "fieldtype": "Int",
+      "default": 10
+    },
+    {
+      "fieldname": "indent",
+      "label": "Indent",
+      "fieldtype": "Int",
+      "default": 0
+    },
+    {
+      "fieldname": "uom",
+      "label": "UOM",
+      "fieldtype": "Select",
+      "options": "SAR\n%\nText",
+      "default": "SAR"
+    },
+    {
+      "fieldname": "sign",
+      "label": "Sign",
+      "fieldtype": "Select",
+      "options": "+\n-",
+      "default": "+"
+    },
+    {
+      "fieldname": "formula",
+      "label": "Formula",
+      "fieldtype": "Data"
+    },
+    {
+      "fieldname": "hide_if_zero",
+      "label": "Hide If Zero",
+      "fieldtype": "Check",
+      "default": 0
+    },
+    {
+      "fieldname": "flags",
+      "label": "Flags",
+      "fieldtype": "Table",
+      "options": "MIS Report Line Flag"
+    }
+  ]
+}
