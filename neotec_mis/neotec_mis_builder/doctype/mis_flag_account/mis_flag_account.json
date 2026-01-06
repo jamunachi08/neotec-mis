@@ -1,7 +1,7 @@
 {
   "doctype": "DocType",
   "name": "MIS Flag Account",
-  "module": "Neotec MIS",
+  "module": "Neotec MIS Builder",
   "custom": 0,
   "track_changes": 1,
   "istable": 1,

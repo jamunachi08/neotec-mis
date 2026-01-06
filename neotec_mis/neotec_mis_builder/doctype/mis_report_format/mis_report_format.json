@@ -1,30 +1,43 @@
 {
   "doctype": "DocType",
-  "name": "MIS Flag",
-  "module": "Neotec MIS",
+  "name": "MIS Report Format",
+  "module": "Neotec MIS Builder",
   "custom": 0,
   "track_changes": 1,
   "istable": 0,
-  "autoname": "field:flag_code",
-  "title_field": "flag_name",
+  "autoname": "field:format_code",
+  "title_field": "format_name",
   "fields": [
     {
-      "fieldname": "flag_code",
-      "label": "Flag Code",
+      "fieldname": "format_code",
+      "label": "Format Code",
       "fieldtype": "Data",
       "reqd": 1,
       "unique": 1
     },
     {
-      "fieldname": "flag_name",
-      "label": "Flag Name",
+      "fieldname": "format_name",
+      "label": "Format Name",
       "fieldtype": "Data",
       "reqd": 1
     },
     {
-      "fieldname": "description",
-      "label": "Description",
-      "fieldtype": "Small Text"
+      "fieldname": "company",
+      "label": "Company",
+      "fieldtype": "Link",
+      "options": "Company"
+    },
+    {
+      "fieldname": "currency",
+      "label": "Currency",
+      "fieldtype": "Link",
+      "options": "Currency"
+    },
+    {
+      "fieldname": "version",
+      "label": "Version",
+      "fieldtype": "Data",
+      "default": "1.0"
     },
     {
       "fieldname": "is_active",
@@ -33,10 +46,10 @@
       "default": 1
     },
     {
-      "fieldname": "accounts",
-      "label": "Accounts",
+      "fieldname": "lines",
+      "label": "Lines",
       "fieldtype": "Table",
-      "options": "MIS Flag Account"
+      "options": "MIS Report Line"
     }
   ],
   "permissions": [
