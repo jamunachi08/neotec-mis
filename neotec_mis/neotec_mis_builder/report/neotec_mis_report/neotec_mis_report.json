@@ -1,9 +1,10 @@
 {
   "doctype": "Report",
-  "is_standard": "Yes",
-  "ref_doctype": "MIS Report Format",
+  "name": "Neotec MIS Report",
   "report_name": "Neotec MIS Report",
+  "ref_doctype": "MIS Report Format",
   "report_type": "Script Report",
+  "is_standard": "Yes",
   "module": "Neotec MIS Builder",
   "disabled": 0
 }
